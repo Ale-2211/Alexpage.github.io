@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="formularios.css">
+</head>
+<body>
+    <div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <section class="registro">
+            <h2>Registrarse</h2>
+            <form method="post" action="index.html">
+                <input class="panel" type="text" name="nombres" id="nombres" placeholder="Escriba su nombre" required pattern="[a-z]+">
+                <input class="panel" type="text" name="apellidos" id="apellidos" placeholder="Escriba sus apellidos" required>
+                <input class="panel" type="email" name="correo" id="correo" placeholder="Escriba un correo electrónico" required>
+                <input class="panel" type="password" name="contraseña" id="contraseña" placeholder="Escribe tu contraseña" required>
+                <input class="panel" type="tel" name="telefono" id="telefono" placeholder="Escribe tu número telefónico" required>
+                <input class="panel" type="date" name="fachanac" id="fechanac" placeholder="Escribe tu fecha de nacimiento" required>
+                <p>Estoy de acuerdo con los <a href="#">Terminos y Condiciones</a></p>
+                <button class="boton">Registrarse</button>
+                <p><a href="sesion.html">¿Ya tienes una cuenta? iniciar sesión</a></p>
+            </form>
+            <header>
+                <div class="container"> 
+                    <nav>
+                        <a class="j" href="index.html">Volver a la página principal</a>
+                    </nav>
+                </div>
+            </header>
+        </section>
+    </div>
+</body>
+</html>

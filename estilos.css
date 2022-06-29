@@ -1,0 +1,431 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: rgb(152, 236, 208);
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 4opx;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    color: black;
+    background-color: coral;
+}
+button:hover{
+    background-color: rgb(199, 93, 55);
+}
+
+.container{
+    max-width: 1500px;
+    height: 300px;
+    margin: auto;
+}
+
+.color-resalte{color: coral;}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: coral;
+    font-size: 1.8em;
+}
+
+header .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: coral;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#somos-redsum .container{
+    text-align: center;
+    padding: 200px 12px;
+    display: flex;
+}
+
+#somos-redsum .texto{
+    margin-top: -40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#nuestros-servicios{
+    height: 120vh;
+    background-color: rgb(30, 30, 30);
+    color: rgb(255, 223, 246);
+    text-align: center;
+    padding: 5px;
+}
+
+#nuestros-servicios .container{
+    padding: 100px 0px;
+    height: 90vh;
+}
+
+#nuestros-servicios p{
+    display: none;
+}
+
+#nuestros-servicios h2{
+    margin-top: 0;
+}
+
+#nuestros-servicios .carta{
+    background-size: cover;
+    background-position: center center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("infraredes.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("seguridad.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("asignacion.jpg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 100px 12px;
+    font-weight: bold;
+    margin-top: -10%;
+}
+#caracteristicas li{
+    padding: 8px 15px 20px 1px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: -5%;
+}
+
+#listo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#listo h2{
+    font-size: 9vw;
+}
+
+#listo button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(168, 165, 165);
+}
+
+footer p{
+    margin: 0;
+    color: rgb(82, 80, 80);
+    padding: 12px;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.holahola{
+    margin-left: 40%;
+    margin-left: 14%;
+    color: wheat;
+    text-shadow: 2px 4px 4px rgb(0, 0, 0), 0 0 25px #ff00fb;
+}
+
+.galeria{
+    position: relative;
+    background-color: rgb(195, 144, 240);
+    border-radius: 16px;
+    margin: 50px 20px;
+    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 30px 0 black;
+    float: left;
+    width: 350px;
+}
+
+.galeria img{
+    border-radius: 16px;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.galeria img:hover{
+    border: 1px solid coral;
+    transform: rotate(-2deg);
+}
+
+.pie{
+    text-align: center;
+    padding: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.overlay{
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 205, 247);
+    width: 100%;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.overlay h2{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-wodth:1000px) {
+    .galeria{
+        width: 95%;
+    }
+}
+
+@media screen and (max-wodth:700px) {
+    .galeria{
+        width: 90%;
+    }
+    .galeria .imagen{
+        width: 48%;
+    }
+}
+
+@media screen and (max-wodth:450px) {
+    .galeria{
+        width: 98%;
+    }
+    .galeria .imagen{
+        width: 80%;
+    }
+}
+
+@media (min-width: 720px){
+    header{
+        
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    
+    .container{
+        max-width: 1500px;
+        height: 100px;
+        margin: auto; 
+    }
+
+    #somos-redsum .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 50px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-redsum h2{
+        margin-top: 0px;
+    }
+
+    #somos-redsum .container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 15%;
+    }
+
+    #somos-redsum .texto{
+        padding: 0;
+        margin-top: -100px;
+    }
+
+    #somos-redsum .img-container{
+        background-image: url("redsum.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 400px;
+        margin-top: -18%;
+        margin-left: 40px;
+    }
+
+    #nuestros-servicios .servicios{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-servicios p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-servicios h3{
+        margin: 0;
+    }
+
+    #nuestros-servicios .carta{
+        padding: 50px;
+        
+    }
+
+    #caracteristicas{
+        margin-top: 15%;
+        margin-left: 20px;
+        background-image: url("caracteristicas.jpg");
+        background-repeat: no-repeat;
+        background-size: 600px 300px;
+        background-position: calc(300vw - 100px) 100px;
+    }
+
+    #caracteristicas .container{
+        height: 90vh;
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    #caracteristicas ul{
+        margin-left: 50px;
+        margin: auto;
+    }
+
+    #caracteristicas li{
+        height: auto;
+        padding: 8px 15px 20px 1px;
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+    #listo h2{
+        font-size: 5em;
+    }
+
+    #listo button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: end;
+    }
+
+
+}
+
+@media (min-width: 1100px){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
